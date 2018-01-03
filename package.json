@@ -65,7 +65,7 @@
     "ipfs-block": "~0.6.1",
     "level-js": "timkuijsten/level.js#idbunwrapper",
     "leveldown": "^1.7.2",
-    "lock-me": "^1.0.3",
+    "lock-me": "creativechain/lock-me#master",
     "lodash.get": "^4.4.2",
     "lodash.has": "^4.5.2",
     "lodash.set": "^4.3.2",
