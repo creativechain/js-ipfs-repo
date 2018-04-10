@@ -1,6 +1,7 @@
 docs
 yarn.lock
 package-lock.json
+.idea
 
 test/test-repo-for*
 
