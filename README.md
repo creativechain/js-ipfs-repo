@@ -159,7 +159,7 @@ Creates the necessary folder structure inside the repo.
 
 #### `repo.open (callback)`
 
-Locks the repo.
+[Locks](https://en.wikipedia.org/wiki/Record_locking) the repo to prevent conflicts arising from simultaneous access.
 
 #### `repo.close (callback)`
 
@@ -281,6 +281,20 @@ Gets the API address.
 Sets the API address.
 
 * `value` should be a [Multiaddr](https://github.com/multiformats/js-multiaddr) or a String representing a valid one.
+
+### `repo.stat ([options], callback)`
+
+Gets the repo status. 
+
+`options` is an object which might contain the key `human`, which is a boolean indicating whether or not the `repoSize` should be displayed in MiB or not.
+
+`callback` is a function with the signature `function (err, stats)`, where `stats` is an Object with the following keys:
+
+- `numObjects`
+- `repoPath`
+- `repoSize`
+- `version`
+- `storageMax`
 
 ## Notes
 
